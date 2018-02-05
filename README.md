@@ -1,4 +1,7 @@
 # Java-final-test  
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0dca2c9612cc4469a0852d1002756f9c)](https://www.codacy.com/app/TYC6/Java-final-test?utm_source=github.com&utm_medium=referral&utm_content=TYC6/Java-final-test&utm_campaign=badger)
+
 2017～2018第一学期，java期末大作业  
 
 ### 1.八皇后问题  
