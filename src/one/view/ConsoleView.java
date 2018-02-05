@@ -16,7 +16,6 @@ public class ConsoleView {
     private ToggleGroup tgroup;
     private Button[] function;
     private VBox console;
-    private Font font;
 
     private static ConsoleView consoleView = null;
 
@@ -27,27 +26,26 @@ public class ConsoleView {
     }
 
     private ConsoleView(){
-        font = Font.font(20);
         tgroup = new ToggleGroup();
         textField = new TextField();
         textField.setPrefSize(120, 40);
-        textField.setFont(font);
+        textField.setFont(Font.font(20));
 
         set = new Button("Set N");
         set.setPrefSize(100,28);
-        set.setFont(font);
+        set.setFont(Font.font(20));
 
         modeSelection = new RadioButton[2];
         for(int i = 0; i < 2; ++i){
             modeSelection[i] = new RadioButton();
-            modeSelection[i].setFont(font);
+            modeSelection[i].setFont(Font.font(20));
             modeSelection[i].setToggleGroup(tgroup);
         }
 
         function = new Button[5];
         for(int i = 0; i < 5; i++){
             function[i] = new Button();
-            function[i].setFont(font);
+            function[i].setFont(Font.font(20));
             function[i].setPrefSize(100,28);
         }
 

@@ -21,13 +21,13 @@ public class FunControl {
         consoleR.getButtons(0).setOnAction(event -> {
             TransacPage transacPage = new TransacPage("存款");
             changeToTransacPage(transacPage);
-            TransacPageEvent(transacPage);
+            transacPageEvent(transacPage);
         });
 
         consoleR.getButtons(1).setOnAction(event -> {
             TransacPage transacPage = new TransacPage("取款");
             changeToTransacPage(transacPage);
-            TransacPageEvent(transacPage);
+            transacPageEvent(transacPage);
         });
 
         consoleR.getButtons(2).setOnAction(event -> {
@@ -48,7 +48,7 @@ public class FunControl {
         MainFrame.borderPane.setCenter(transacPage.getTransacPane());
     }
 
-    private static void TransacPageEvent(TransacPage transacPage){
+    private static void transacPageEvent(TransacPage transacPage){
         transacPage.getConfirm().setOnAction(event -> {
             //1.find the object client
             ArrayList<Client> clients = FileOperation.getAllClients();

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class FileOperation {
     private static File file = new File("src/two/files/records.txt");
 
-    public static void AddRecords(StuInfo stuInfo){
+    public static void addRecords(StuInfo stuInfo){
         if(!file.exists()){
             try {
                 file.createNewFile();

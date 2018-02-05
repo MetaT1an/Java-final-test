@@ -31,7 +31,7 @@ public class InfoControl {
             String address = loginPage.getTextField(3).getText();
 
             Client client = new Client(name, passWord, address, tel);
-            FileOperation.AddClient(client);
+            FileOperation.addClient(client);
             showSignUpInfo();
 
         });

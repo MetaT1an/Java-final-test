@@ -18,12 +18,12 @@ public class InfoControl {
         String score = infoCenter.getTextField(2).getText();
 
         StuInfo stuInfo;
-        if(score.equals(""))
+        if("".equals(score))
             stuInfo = new StuInfo(name, id);
         else
             stuInfo = new StuInfo(name, id, Double.parseDouble(score));
 
-        FileOperation.AddRecords(stuInfo);
+        FileOperation.addRecords(stuInfo);
     }
 
     private static void summit(){

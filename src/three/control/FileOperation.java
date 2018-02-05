@@ -10,7 +10,7 @@ public class FileOperation {
     private static File clientFile = new File("src/three/files/clientRecords.txt");
     private static File transactionFile = new File("src/three/files/transactionRecords.txt");
 
-    public static void AddClient(Client c){
+    public static void addClient(Client c){
         if(!clientFile.exists()){
             try {
                 clientFile.createNewFile();

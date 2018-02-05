@@ -53,15 +53,18 @@ public class EightQueenModel {
     }
 
     public boolean isValid(int k,int j){
-        for(int i =0;i<N;++i){
+
+        int i;
+        int m;
+        for(i =0;i<N;++i){
             if(arr[i][j])   //conflict with row
                 return false;
         }
-        for(int i=k-1,m=j-1;i>=0&&m>=0;i--,m--){
+        for(i=k-1,m=j-1;i>=0&&m>=0;i--,m--){
             if(arr[i][m])   //left-up
                 return false;
         }
-        for(int i=k-1,m=j+1;i>=0&&m<=N-1;i--,m++){
+        for(i=k-1,m=j+1;i>=0&&m<=N-1;i--,m++){
             if(arr[i][m])  //right-up
                 return false;
         }

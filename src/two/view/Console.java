@@ -73,7 +73,7 @@ public class Console {
         vBox.getChildren().addAll(selecs);
         vBox.getChildren().add(funcs[2]);
 
-        vBox.setAlignment(Pos.CENTER);;
+        vBox.setAlignment(Pos.CENTER);
     }
 
 

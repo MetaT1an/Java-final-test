@@ -125,7 +125,7 @@ public class ConsoleControl {
         int scale = 8;
         String s = consoleView.getTextField().getText();
 
-        if(!s.equals("") && Integer.parseInt(s) > 7 && Integer.parseInt(s) < 14)
+        if(!"".equals(s) && Integer.parseInt(s) > 7 && Integer.parseInt(s) < 14)
             scale = Integer.parseInt(s);
         EightQueenModel.setN(scale);
     }
