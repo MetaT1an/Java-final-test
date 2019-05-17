@@ -1,6 +1,7 @@
 var proxy = "SOCKS5 127.0.0.1:1080;";
 
 var domains = {
+  "gist.github.com": 1,
   "4shared.com": 1, 
   "galstars.net": 1, 
   "gloryhole.com": 1, 
