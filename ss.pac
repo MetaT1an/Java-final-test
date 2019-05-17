@@ -1787,7 +1787,7 @@ var domains = {
   "sstmlt.moe": 1, 
   "falun-co.org": 1, 
   "jinpianwang.com": 1, 
-  "hahaxixi.github.io": 1, 
+  "hahaxixi.github.io": 0, 
   "ncn.org": 1, 
   "nat.gov.tw": 1, 
   "alwaysvpn.com": 1, 
